@@ -348,6 +348,18 @@ If not specified, the sigil defaults to <code class="language-plaintext highligh
 </code></pre></div></div>
 <div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">orig</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="err">…</span><span class="p">)</span>
 </code></pre></div></div>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">orig</span><span class="p">(</span><span class="o">^</span><span class="p">{</span>
+   <span class="p">...</span>
+<span class="p">})</span>
+</code></pre></div></div>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">orig</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="err">…</span><span class="p">,</span> <span class="o">^</span><span class="p">(</span><span class="n">id</span> <span class="n">blockArg1</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">...</span>
+<span class="p">})</span>
+</code></pre></div></div>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">orig</span><span class="p">(</span><span class="o">^</span><span class="p">(</span><span class="n">blockArgs</span><span class="p">,</span> <span class="err">…</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">...</span>
+<span class="p">})</span>
+</code></pre></div></div>
 
 <p>Call the original hooked function or method.
 Doesn’t work in a <a href="#new">%new</a>‘d method.
